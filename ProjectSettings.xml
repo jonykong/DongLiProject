@@ -1,0 +1,16 @@
+{
+	"action":11,
+	"chatMsg":
+	{
+		"senderId":"venue-33-afc84bc3-4359-2c83-376a-f73956500a95",
+		"receiverId":"texst",
+		"msg":null,
+		"msgId":null
+	},
+	"extand":null,
+	"model":"1",
+	"groupTag":null,
+	"venue-33":null,
+	"URL":"http://39.98.113.10:9999",
+	"video_url":"http://39.98.113.10:8888/"
+}

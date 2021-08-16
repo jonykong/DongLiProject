@@ -1,0 +1,70 @@
+MainWindow
+{
+	font-size: 12px;
+	font-family: PingFang SC;
+}
+
+PlayDialog QLabel
+{
+	font-size: 12px;
+	font-family: PingFang SC;
+	color: white;
+}
+
+PlayDialog QLabel#label_5
+{
+	color: black;
+}
+
+PlayDialog QPushButton
+{
+	width: 120px;
+	height: 30px;
+	border-radius: 8px;
+	font-size: 12px;
+	font-family: PingFang SC;
+	color: white;
+	background: #242221;
+}
+
+PlayDialog QWidget#widget_play
+{
+	background: #3A3938;
+}
+
+PlayDialog QWidget#widget_videoInfo
+{
+	background: #242221;
+}
+
+PlayDialog QWidget#widget_other
+{
+	background: #3A3938;
+}
+
+QPlayDialog QWidget#widget_stage
+{
+	background: #3A3938;
+}
+
+PlayDialog QTextBrowser
+{
+	font-size: 12px;
+	font-family: PingFang SC;
+	color: white;
+	background: #4E4948;
+}
+
+VideoFrame QToolButton
+{
+	color: white;
+	font-size: 12px;
+	font-family: PingFang SC;
+}
+
+DProgramItemFrame QLabel
+{
+	font-size: 12px;
+	font-family: PingFang SC;
+}
+

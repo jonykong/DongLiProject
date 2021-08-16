@@ -1,0 +1,28 @@
+<RCC>
+    <qresource prefix="/icon">
+        <file>resource/background.png</file>
+        <file>resource/list.png</file>
+        <file>resource/listItem.png</file>
+        <file>resource/button.png</file>
+        <file>resource/group.png</file>
+        <file>resource/ItemBackground.png</file>
+        <file>resource/logo.png</file>
+        <file>resource/more.png</file>
+        <file>resource/Project.qss</file>
+        <file>resource/aiqiyi.png</file>
+        <file>resource/baidu.png</file>
+        <file>resource/blibli.png</file>
+        <file>resource/mangguo.png</file>
+        <file>resource/tengxun.png</file>
+        <file>resource/youku.png</file>
+        <file>resource/bigList.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>resource/background.png</file>
+        <file>resource/button.png</file>
+        <file>resource/group.png</file>
+        <file>resource/list.png</file>
+        <file>resource/listItem.png</file>
+        <file>resource/logo.png</file>
+    </qresource>
+</RCC>

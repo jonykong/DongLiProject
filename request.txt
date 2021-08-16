@@ -1,0 +1,45 @@
+ QString url = "http://aleex.natapp1.cc/api/vdieo/home";
+    HiNetworkRequest request;
+    request.SetRequestUrl(url);
+
+    HiEventLoop loop;
+    QNetworkAccessManager magr;
+    QNetworkReply* replay = request.SendRequest_(&magr, QNetworkAccessManager::GetOperation);
+    connect(replay, &QNetworkReply::finished, &loop, &HiEventLoop::TimeOut);
+    loop.start();
+    loop.exec();
+    if (replay == nullptr || replay->error())
+    {
+        replay->deleteLater();
+        replay = NULL;
+        return;
+    }
+    else
+    {
+        QByteArray arr = replay->readAll();
+        replay->deleteLater();
+        replay = NULL;
+
+        QString strParam = QString::fromUtf8(arr);
+
+        QJsonDocument jsonDocument = QJsonDocument::fromJson(arr);
+        QJsonObject obj = jsonDocument.object();
+        if (!obj.isEmpty())
+        {
+            if (obj.contains("code"))
+            {
+                int qsErrorCode = obj.value("code").toInt();
+                if (qsErrorCode != 200)
+                {
+                    return;
+                }
+
+                if (obj.contains("data"))
+                {
+                    QString strParam = obj.value("data").toString();
+
+                    printf("%s", strParam);
+                }
+            }
+        }
+    }
